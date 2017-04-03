@@ -75,10 +75,10 @@ $(function () {
 });
 
 //Countdown for demo. Always add 18 days
-var someDate = new Date();
-var numberOfDaysToAdd = 18;
-someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+// var someDate = new Date();
+// var numberOfDaysToAdd = 18;
+// someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
 
 //Countdown with real date
-//var someDate = new Date("November 13, 2015 23:59:59");
-//someDate.setDate(someDate.getDate()); 
+var someDate = new Date("June 1, 2017 00:00:00");
+someDate.setDate(someDate.getDate()); 
