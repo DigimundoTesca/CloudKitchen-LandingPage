@@ -9,7 +9,7 @@ body
     text-align: center;
     color: #ffffff;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     background: #454545;
     
     /* Margin bottom by footer height (sticky)  */
@@ -334,6 +334,9 @@ a, button
     background-color: #cb2027;
     border-color: #cb2027;
 }
+.info-contact {
+    font-size: 1.6rem;
+}
 
 /*********************************/
 /********* Placeholder ***********/
@@ -399,14 +402,16 @@ a, button
 }
 
 .section{
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 #contact 
 {
-    margin: 10px 0px;
+    margin: 10px 0;
 }
-
+#contact a {
+    font-size: 2.2rem;
+}
 #contact a:first-child 
 {
     margin-right: 20px;

@@ -10,7 +10,7 @@ $(function () {
 			{image : 'images/bg1.jpg', title : '', thumb : '', url : ''},
 			{image : 'images/bg2.jpg', title : '', thumb : '', url : ''},
 			{image : 'images/bg3.jpg', title : '', thumb : '', url : ''},
-			{image : 'images/bg4.jpg', title : '', thumb : '', url : ''},
+			{image : 'images/bg4.jpg', title : '', thumb : '', url : ''}
 		]
 	});
         
@@ -38,27 +38,27 @@ $(function () {
 	});
         
 	//Submit Newsletter form to PHP file
-	$("#form_newsletter").submit(function(event) {
+	// $("#form_newsletter").submit(function(event) {
 	    
-		//stop form from submitting normally
-		event.preventDefault();
+	// 	//stop form from submitting normally
+	// 	event.preventDefault();
 
-		//get some values from elements on the page:
-		var $form = $( this );
+	// 	//get some values from elements on the page:
+	// 	var $form = $( this );
 
-		$("#form_newsletter button").attr("disabled", "disabled");
+	// 	$("#form_newsletter button").attr("disabled", "disabled");
 
-		//Send the data using post
-		var posting = $.post( 'process_form.php', $form.serialize() );
+	// 	//Send the data using post
+	// 	var posting = $.get( 'process_form.php', $form.serialize() );
 
-		//Show result
-		posting.done(function( data ) {
+	// 	//Show result
+	// 	posting.done(function( data ) {
 
-			$("#form_newsletter button").removeAttr('disabled');
+	// 		$("#form_newsletter button").removeAttr('disabled');
 
-			$("#form_newsletter_result").hide().html(data).fadeIn();
-		});
-	});
+	// 		$("#form_newsletter_result").hide().html(data).fadeIn();
+	// 	});
+	// });
     
 	//About us (Open / Close)
 	$(".open_aboutus").click(function() {
@@ -68,11 +68,13 @@ $(function () {
 	$(".close_aboutus").click(function() {
 		$("#about_us").removeClass('animated fadeIn').addClass('animated fadeOut').fadeOut();
 	});
-        
-            
-        
-		
+
 });
+
+function save_subscriber(event) {
+	var email_input = $('#email-form').val();
+	console.log(email_input);
+}
 
 //Countdown for demo. Always add 18 days
 // var someDate = new Date();
@@ -80,5 +82,5 @@ $(function () {
 // someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
 
 //Countdown with real date
-var someDate = new Date("June 1, 2017 00:00:00");
+var someDate = new Date("August 1, 2017 00:00:00");
 someDate.setDate(someDate.getDate()); 
