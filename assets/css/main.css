@@ -1,0 +1,7 @@
+.carousel-item {
+  height: 90vh;
+  overflow: hidden;
+}
+.pageSecctions {
+  min-height: 90vh;
+}
