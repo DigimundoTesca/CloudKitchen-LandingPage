@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--styles.css-->
@@ -20,52 +21,111 @@
     <link rel="stylesheet" type="text/css" href="statics/css/animate.css" />
   </head>
   <body>
+    <div class="modal"></div>
     <div class="container-fluid ck-principal">
       <header>
         <div id="navbar-main">
         <div id="navbar-container">
-          <a href="index.html"><img id="logo-nav" src="statics/images/logo.png" alt="Cloud Kitchen LOGO"></a>
+          <a href="index.html"><img id="logo-nav" src="statics/images/CloudKitchen.png" alt="Cloud Kitchen LOGO"></a>
           <div class="nav-content">
             <a href="#" class="text-uppercase">Cloud Kitchen</a>
-            <a href="" class="text-uppercase">NUESTROS SERVICIOS</a>
+            <a href="" class="text-uppercase">SERVICIOS</a>
             <a href="#" class="text-uppercase">NOSOTROS</a>
-            <a href="#" class="text-uppercase btn btn-outline-light button" id="cotiza">¡COTIZA YA!</a>
+            <a href="buy.html" class="text-uppercase btn btn-outline-light button" id="cotiza">¡compra YA!</a>
           </div>
-          <a id="show-menu" class="dropbtn icon-container fas fa-bars"></a>
-          <div id="navigation">
+          <button type="button" id="show-menu"><a id="show-menu" class="dropbtn icon-container fas fa-bars"></a></button>
+          <div id="navigation" class="">
+            <h5 class="mt-4 text-center"> Desliza para ocultar <i class="fas fa-arrow-right"></i></h5 class="mt-4">
+            <img id="logo-principal" class="img-fluid rounded mx-auto d-block" src="statics/images/Cloud_kitchenLogo_white.png" alt="Cloud Kitchen LOGO">
+            <!--<img id="logo-menu" class="img-fluid rounded mx-auto d-block" src="statics/images/CloudKitchen_white.png" alt="Cloud Kitchen LOGO">-->
             <a href="#" class="text-uppercase">Cloud Kitchen</a>
-            <a href="#" class="text-uppercase">NUESTROS SERVICIOS</a>
+            <a href="#" class="text-uppercase">SERVICIOS</a>
             <a href="#" class="text-uppercase">NOSOTROS</a>
-            <a href="#" class="text-uppercase btn btn-outline-light button" id="cotiza">¡COTIZA YA!</a>
+            <a href="buy.html" class="text-uppercase btn btn-outline-light button" id="cotiza">¡compra YA!</a>
+            <a class="social" href="https://www.facebook.com/cloudkitchensoftware/">Siguenos en facebook <i id="facebook" class="text-center fab fa-facebook-square"></i></a>
           </div>
-
         </div>
       </div>
       </header>
       <div class="begin">
-        <div class="row justify-content-center" id="mainbanner">
+        <div class="desliza row justify-content-center" id="mainbanner">
           <div class="name align-self-center text-center">
-            <h1 class="text-center mt-5">Cloud Kitchen</h1>
-            <h2 class="text-center mt-4">Administra tu negocio de la mejor manera</h2>
+            <img id="logo-principal" src="statics/images/Cloud_kitchenLogo_white.png" alt="Cloud Kitchen LOGO">
+            <!--<h1 class="text-center">Cloud Kitchen</h1>-->
+            <h2 class="text-center mt-3">Administra tu negocio de la mejor manera</h2>
             <p class="text-center parrafo_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed eu massa semper, pretium augue in,
               varius lorem. In at neque dolor.</p>
-            <button type="button" class="btn btn-outline-light button mt-4" name="button">¡Cotiza ya!</button>
-            <button type="button" class="btn btn-outline-light button mt-4" name="button">Conoce más</button>
+              <a href="buy.html" class="btn btn-outline-light button mt-4">¡Compra ya!</a>
+              <a href="#" class="btn btn-outline-light button mt-4">Conoce más</a>
           </div>
         </div>
-        <div class="container cloud">
-          <div class="questions mt-5">
-            <h2 class="title text-center">¿Por qué elegir Cloud Kitchen?</h2>
-            <p class="mt-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu massa semper, pretium augue in, varius lorem. In at neque dolor. Proin tristique eleifend tempus. In elementum varius lectus, sed ultrices neque vulputate auctor.
-              <br>Fusce vel sem ac lorem varius interdum non vel risus. Aliquam eget euismod massa. Donec sollicitudin non nisi sit amet blandit.
-              <br>Curabitur vitae sapien nec ligula sollicitudin bibendum eu quis ligula.</p>
-          </div>
+      </div>
+      <div class="banner1">
+          <div id="cloudkitchen" class="container cloud">
+              <div class="desliza questions" id="banner1">
+                <h1 class="title text-center">¿Qué es Cloud Kitchen?</h1>
+                <p class="mt-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu massa semper, pretium augue in, varius lorem. In at neque dolor. Proin tristique eleifend tempus.
+                   In elementum varius lectus, sed ultrices neque vulputate auctor.</p>
+              <div class="beneficios mt-5">
+                <h2>¡Asombrosos Beneficios!</h2>
+                <div class="row text-center">
+                  <div class="col-md-4">
+                    <i id="i-cloud" class="icon-b fas fa-cloud" style="font-size:120px"></i>
+                    <h3 class="b-name">Conectado a la nuve</h3>
+                    <p>Lo puedes usar desde cualquier cispositivo, 
+                      en cualquier parte del mundo. 
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:120px"></i>
+                    <h3 class="b-name">Amigable</h3>
+                    <p>Es fácil de usar, con elementos gráficos
+                      que ayudan a que cualquiera pueda utilizarla.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <i id="i-join" class="icon-b fas fa-sitemap" style="font-size:120px"></i>
+                    <h3 class="b-name">Integral</h3>
+                    <p>Todas las funcionalidades que necesitas en un solo programa</p>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-success button">¡Compra ya!</a>
+              </div>    
+              </div>
+            </div>
+      </div>
+        
+      
 
+      <div id="SERVICIOS">
+        <div class="desliza container-fluid" id="banner2">
+          <div class="banner2-container justify-content-center">
+              <h1 class="text-center">Servicios de Cloud Kitchen</h1>
+              <ul class="our-services">
+                <li class="serv"><span>Analitics</span> Reportes en tiempo real sobre el desempeño de tu restaurante </li>
+                <li class="serv"><span>pos</span> Ventas con gráficas para facilitar su uso </li>
+                <li class="serv"><span>Contador de accesos</span> Contabiliza los accesos del personal y de los clientes </li>
+                <li class="serv"><span>insumos</span> Muestra encuestas de satisfaccion, te permitirán identificar áreas de oportunidad </li>
+                <li class="serv"><span>Cocinas</span> Maneja más de una cocina a la vez </li>
+                <li class="serv"><span>Satisfacción</span> Nuestras encuestas de satisfacción te permiten identificar áreas de oportunidad </li>
+              </ul>
+              <img src="statics/images/compu.png" class="img-fluid rounded mx-auto d-block" alt="">
+          </div>
         </div>
-      </div><script src="https://code.jquery.com/jquery-1.10.2.js">
+      </div>
+
+      <div class="clientes">
+        <h2 class="text-center">Clientes</h2>
+      </div>
+      <div class="footer">
+        <footer>
+
+        </footer>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
