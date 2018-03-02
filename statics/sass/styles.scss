@@ -93,7 +93,7 @@ opacity: 0;
   top: 0;
   right: -85%;
   /*background-color: rgba(51,127,137, 0.8);*/
-	background-color: rgba(0,0,0,0.9);
+	background-color:rgba(50, 62, 82,0.9);
 	height: 100%;
   width: 85%;
   a{
@@ -142,12 +142,8 @@ div.nav-content a:hover{
   padding-right: 15px !important;
   color: #FFF;
 }
-#mainbanner{
-    h2{
-        color: $text-light;
-    }
-} 
-#mainbanner, #banner2{
+
+#mainbanner, #banner2, #banner1, #banner4{
   position: relative;
   margin:0;
   z-index: 1;
@@ -165,7 +161,16 @@ div.nav-content a:hover{
   -o-transition: background-image 2s ease-out;
   transition: background-image 2s ease-out;
 }
-#mainbanner:after, #banner2:after{
+#banner1{
+  background: #FFF; 
+  p{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #A2A3A8;
+  }
+}
+#mainbanner:after, #banner2:after, #banner4:after, #banner3:after{
   content:"";
  position:absolute;
  top:0;
@@ -174,10 +179,26 @@ div.nav-content a:hover{
  height:100%;
  background:rgba(0,0,0,0.6);
  }
-.name,
-.banner2-container{
-	position: relative;
+ #banner3:after, #banner1:after{
+   background: rgba(125, 192, 200,0.10);
+ }
+ #mainbanner{
+   height: 100vh;
+  h2{
+      color: $text-light;
+  }
+} 
+.banner2-container,.name, #banner3 div{
+  position: relative;
   z-index: 1;
+  div.row{
+    position: relative;
+  }
+  img{
+    padding: .5rem;
+    margin-bottom: .5rem; 
+    
+  }
 }
 .name > .button{
   margin: 1em;
@@ -190,9 +211,14 @@ div.nav-content a:hover{
 .questions{
     height: 100vh;
     > h1 {
-        margin-top: 5rem;
+        top: 55px;
+        padding-top: 5rem;
       /*color: #80abb3;*/
-        color:$text-dark;
+        color:#3f414d;
+    }
+    p{
+      position: relative;
+      display: flex;
     }
 }
 .parrafo_light{
@@ -204,62 +230,180 @@ div.nav-content a:hover{
 h3.b-name{
     font-weight: bold;
     margin-top: 1.2rem;
-    color: $text-dark;
+    color: #767884;
 }
-.beneficios h2{
-    color: #000;
+
+.beneficios{
+  h2{
+    color: #767884;
     margin-bottom: 2rem;
-}
-/*#i-cloud{
+  }
+  div{
+    div{
+      p{
+        color: #a8a9b1;
+      }
+    }
+  }
+} 
+#i-cloud{
     color: $text-dark;
 }
 #i-interface{
-    color: green; 
+    color:#4e9b3b; 
 }
 #i-join{
     color: black
 }
 /*Nuestros SERVICIOS*/
 #banner2{
-	background-image: url('../images/banner2.jpeg');
+  background-image: url('../images/banner2.jpeg');
+  .banner2-container{
+   padding: 1rem;
+  a.button{
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important; 
+  }
+  a.button:hover{
+    transform: scale(.95) !important;
+    color: $text-light;
+    font-weight: bold;
+  }
+  }
+  h1{
+    padding-top: 3rem;
+  }
+  
 }
-.banner2-container{
-	padding: 1rem;
-}
+
 #banner2 h1, .our-services{
-	position: absolute;
-	top: 150px;
-	color: #FFF;
+  position: relative;
+  color: #FFF;
+  z-index: 10;
 }
 .our-services{
-	top: 230px;
-	margin-top: 2rem;
-}
+    > span{
+      position: relative;
+      margin: 0;
+    }
+    a.serv{
+      span{
+        color: $text-dark;
+        margin: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
 .serv{
 	padding: 1rem;
 }
-/*compra*/
-header#nav-dark{
-    #navbar-main {
-        background-color: rgba(0,0,0,0.50);
+
+/*video youtube*/
+#banner3{
+  height: 100vh;
+  background-color: #FFF;
+  .title{
+    h1{
+      color: $text-black;
+      padding-top: 4rem;
+    }
+  }
+  .video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    iframe{
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+      height: 30%;
+    }
+  }
+}
+#banner4{
+  background-image: url('../images/banner6.jpeg');
+  height: auto;
+    h2{
+      position: relative;
+      padding-top: 1rem;
+      color: $text-light;
+      z-index: 10;
     }
 }
+
+/*compra*/
+#nav-dark{
+  #navbar-main{
+    background-color: rgba(0,0,0,0.50);
+  }
+}
 div.main-buy{
-    .title{
-        h1{
-            padding-top:1rem;
-            color: $text-dark;
-        }
+  .title{
+    h1{
+      padding:1rem;
+      color: $text-black;
     }
+  }
+  div{
+    margin-top: 1rem;
     div{
-        margin-top: 3rem;
-        div{
-            h2{
-                color: black;
-            }
+      h2{
+        text-align: center;
+        color:$text-sub-dark;
+      }
+      span{
+        
+        #i-interface{
+          display: flex;
+          margin: 0 auto;
+          color: $text-sub-dark;
+          margin-top: .45rem;
+          margin-bottom: .1rem;
         }
-    }
+      }
+      a.button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 0rem !important;
+        margin-bottom: 1.3rem;
+      }
+    } 
+  }
 } 
+.logo-buy{
+  width: 50%;
+}
+.modules{
+  div{
+    position: relative;
+    
+    h2{
+      padding-bottom: 0rem;
+    }
+    ul{
+      li{
+        color:$text-black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+#title-modules{
+  margin-top: 6.8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/*Footer*/
+div.footer{
+  width: 100%;
+  height: 200px;
+  background-color:rgb(50, 62, 82);
+}
 /*laptops*/
 @media (min-width: 1025px) and (max-width: 1366px) {
   .nav-content{
@@ -268,9 +412,74 @@ div.main-buy{
   .dropbtn{
     display: none;
   }
-  #mainbanner, #banner1, #banner2{
+  #mainbanner, #banner1, #banner2, #banner3, #banner4{
       height: 100vh;
   }
+  .our-services{
+    margin-top: 5rem;
+      > span{
+        width: 60%;  
+        position: absolute;
+        margin: 0;
+      }
+      :first-child{
+        right: -25%;
+        top:-6rem;
+      }
+      >span#serv2, #serv5{
+        right: -5%;
+        top: 3.5rem !important;
+      }
+      :last-child{
+        top: 10rem;
+        padding-top: 2rem;
+        right: -25%;
+      }
+      #serv4, #serv6{
+        left: -25%;
+      }
+      #serv5{
+        top: 4rem;
+        left: 0;
+      }
+    }
+    .banner2-container{
+      img{
+        padding: .5rem;
+        margin-top: 4rem;
+        margin-bottom: .5rem;        
+      }
+    } 
+    #banner3{
+      div{
+        h1{
+          margin-bottom: 2rem;
+          span{
+            color: $text-dark;
+            font-weight: bold;
+          }
+        }
+      }
+      .video{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        iframe{
+          display: flex;
+          margin: 0 auto;
+          width: 80%;
+          height: 60%;
+        }
+      }
+    } 
+    #banner4{
+      height: 70vh;
+      h2{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+      }
+    }
 }
 /*ipad*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
