@@ -17,29 +17,24 @@ $(document).ready(function() {
     return false;
   });
 });
+  /*background aleatorio*/
+  do {
+  	$(document).ready(function() {
 
-/*background aleatorio*/
-$(function() {
-  var imagenes = ['banner1.jpeg', 'banner2.jpeg', 'banner3.jpeg', 'banner4.jpeg', 'banner5.jpeg', 'banner6.jpeg', 'banner7.jpeg'];
-	$('#mainbanner').css({'background-image': 'url(statics/images/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
-});
-do {
-	$(document).ready(function() {
+    var contenedor = $('#mainbanner');
+  	var imagenes = ['banner1.jpeg', 'banner2.jpeg', 'banner3.jpg', 'banner4.jpeg', 'banner5.jpeg', 'banner6.jpeg', 'banner7.jpeg'];
+  	var tiempo = 2500;
+  	contenedor.css({'background-image':'url(statics/images/banner3.jpg)'});
 
-	var contenedor = $('#mainbanner');
-	var imagenes = ['banner1.jpeg', 'banner2.jpeg', 'banner3.jpeg', 'banner4.jpeg', 'banner5.jpeg', 'banner6.jpeg', 'banner7.jpeg'];
-	var tiempo = 2500;
-	contenedor.css({'background-image':'url(statics/images/banner3.jpeg)'});
+  	function image(){
+  	setTimeout(function() {
+  	contenedor.fadeIn('slow', 0.3, function() {
+  	$(this).css({'background-image': 'url(statics/images/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
+  	image();}).fadeIn('slow', 0.3); },tiempo); }
 
-	function image(){
-	setTimeout(function() {
-	contenedor.fadeIn('slow', 0.3, function() {
-	$(this).css({'background-image': 'url(statics/images/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
-	image();}).fadeIn('slow', 0.3); },tiempo); }
-
-	image();
-	});
-} while (false);
+  	image();
+  	});
+  } while (false);
 
 /*show menu*/
 $(document).ready(function(){
@@ -50,7 +45,13 @@ $(document).ready(function(){
 		$('.modal').animate({opacity:"1"},700);
 	});
 });
-
+/*videos slide*/
+$("#begin-slide").cycle({
+		fx : 'fade',
+		timeout: 3000,
+		speed: 2000,
+		slides: '.slide'
+});
 /*change background color nav*/
   $(document).scroll(function(){
     if($(this).scrollTop() > 25) {
@@ -59,7 +60,7 @@ $(document).ready(function(){
       $('#navbar-main').css({"background-color":"rgba(0,0,0,0.01)"});
     }
 	});
-	
+
 
 /*menu lateral*/
 	var navigation		= document.getElementById('navigation');

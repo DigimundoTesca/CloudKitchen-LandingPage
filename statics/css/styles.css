@@ -6,10 +6,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   height: auto;
   font-size: 16px;
-  position: relative; }
+  position: relative;
+  color: #FFF; }
 
 h1 {
   color: #FFF;
@@ -26,8 +27,12 @@ h2 {
   z-index: 100;
   padding: 0;
   height: auto;
+  overflow: hidden;
   width: 100%; }
-
+#slogan {
+  color: #7dc0c8 !important;
+  font-weight: 700; 
+}
 .modal {
   width: 100%;
   height: 100vh;
@@ -42,10 +47,10 @@ h2 {
 
 #navbar-main {
   background-color: rgba(0, 0, 0, 0.01);
-  -webkit-transition: background-color 3s ease-out;
-  -moz-transition: background-color 3s ease-out;
-  -o-transition: background-color 3s ease-out;
-  transition: background-color 3s ease-out;
+  -webkit-transition: background-color 2.5s ease-out;
+  -moz-transition: background-color 2.5s ease-out;
+  -o-transition: background-color 2.5s ease-out;
+  transition: background-color 2.5s ease-out;
   position: fixed;
   width: 100%;
   z-index: 10; }
@@ -142,24 +147,22 @@ div.nav-content a:hover {
   z-index: 1;
   height: auto;
   width: 100%;
-  background-image: url("../images/banner3.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-transition: background-image 2s ease-out;
-  -moz-transition: background-image 2s ease-out;
-  -o-transition: background-image 2s ease-out;
-  transition: background-image 2s ease-out; }
+  -webkit-transition: background-image 2s ease-in-out;
+  -moz-transition: background-image 2s ease-in-out;
+  -o-transition: background-image 2s ease-in-out;
+  transition: background-image 2s ease-in-out; }
 
 #banner1 {
   background: #FFF; }
   #banner1 p {
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    font-size: 18px;
+    padding: .7rem 2em;
     color: #A2A3A8; }
 
 #mainbanner:after, #banner2:after, #banner4:after, #banner3:after {
@@ -181,6 +184,7 @@ div.nav-content a:hover {
 
 .banner2-container, .name, #banner3 div {
   position: relative;
+  margin-bottom: 3.5em;
   z-index: 1; }
   .banner2-container div.row, .name div.row, #banner3 div div.row {
     position: relative; }
@@ -226,7 +230,7 @@ h3.b-name {
 #i-cloud {
   color: #7dc0c8; }
 
-#i-interface {
+#i-check {
   color: #4e9b3b; }
 
 #i-join {
@@ -234,7 +238,7 @@ h3.b-name {
 
 /*Nuestros SERVICIOS*/
 #banner2 {
-  background-image: url("../images/banner2.jpeg"); }
+  background-image: url("../images/chef.jpg"); }
   #banner2 .banner2-container {
     padding: 1rem; }
     #banner2 .banner2-container a.button {
@@ -273,14 +277,13 @@ h3.b-name {
     padding-top: 4rem; }
   #banner3 .video {
     width: 100%;
-    height: 100%;
     position: relative;
     margin: 0 auto; }
     #banner3 .video iframe {
       display: flex;
       margin: 0 auto;
       width: 80%;
-      height: 30%; }
+      height: auto; }
 
 #banner4 {
   background-image: url("../images/banner6.jpeg");
@@ -290,11 +293,13 @@ h3.b-name {
     padding-top: 1rem;
     color: #FFF;
     z-index: 10; }
+  #banner4 div, #banner4 h2 {
+    z-index: 20; }
+  #banner4 .clientes {
+    width: 150px;
+    margin-top: -1em; }
 
 /*compra*/
-#nav-dark #navbar-main {
-  background-color: rgba(0, 0, 0, 0.5); }
-
 div.main-buy .title h1 {
   padding: 1rem;
   color: #41424E; }
@@ -330,64 +335,139 @@ div.main-buy div {
   margin-top: 6.8rem;
   margin-bottom: 1rem; }
 
+#banner5 {
+  color: #41424E; }
+  #banner5 ul.movil-pakage {
+    display: none; }
+  #banner5 #buy-title {
+    font-weight: 600;
+    color: #7dc0c8; }
 
 
-/*Clientes*/
-img.clientes{
-  position: relative;
-  width: 150px;
-  z-index: 10;
+#myFooter {
+    background-color: rgb(50, 62, 82);
+    color: white;
+    padding-top: 30px;
 }
-#dabba{
-  margin-top: .8rem;
-}
-#keff{
-  width: 100px;
-  margin-top: .7rem;
-}
-#si{
-  width: 100px;
-}
-/*Footer*/
-/*footer*/
-footer {
-  color: #FFF;
-  padding: 0;
-  margin: 0;
-}
-.face:hover{
-	color: gray;
-}
-footer .footer {
 
-  display: flex;
-  margin-bottom: 0px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  min-height: 60px;
+#myFooter .footer-copyright {
+    background-color:rgb(32, 46, 69) ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
-footer .copy {
-  min-width: 300px;
-  font-size: 20px;
+
+#myFooter .row {
+    margin-bottom: 60px;
 }
-.socialMenu li {
-  list-style: none;
-  display: inline-block;
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
 }
-.socialMenu li a {
-  list-style: none;
-  text-decoration: none;
-  color: #FFF;
-  padding: 0 10px;
-  font-size: 20px;
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
 }
-div.footer {
-  width: 100%;
-  background-color: #323e52; }
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+#logoFooter {
+    max-width: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  #banner5 ul.movil-pakage {
+    display: block; }
+  #banner5 #modules, #banner5 #title-modules {
+    display: none; }
+  #myFooter {
+      text-align: center;
+  }
+  #banner3 {
+    height: auto;
+  }
+  #banner3 .title h1 {
+    padding-top: 0;
+    font-size: 40px;
+  }
+  }
+
+div.main-buy div div span #i-interface {
+  display: none; }
 
 /*laptops*/
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .nav-content {
     display: block; }
 
@@ -395,34 +475,35 @@ div.footer {
     display: none; }
 
   #mainbanner, #banner1, #banner2, #banner3, #banner4 {
-
     height: 100vh; }
 
   .our-services {
-    margin-top: 5rem; }
+    margin-top: 1.5rem; }
     .our-services > span {
-      width: 60%;
-      position: absolute;
-      margin: 0; }
+      width: 100%;
+      position: relative;
+      display: block;
+      margin: 0 auto; }
+      .our-services > span a {
+        cursor: pointer; }
     .our-services :first-child {
       right: -25%;
       top: -6rem; }
     .our-services > span#serv2, .our-services #serv5 {
       right: -5%;
-      top: 3.5rem !important; }
+      top: 0rem !important; }
     .our-services :last-child {
-      top: 10rem;
-      padding-top: 2rem;
+      top: 6rem;
       right: -25%; }
     .our-services #serv4, .our-services #serv6 {
-      left: -25%; }
+      left: -17.5%; }
     .our-services #serv5 {
-      top: 4rem;
+      top: 2rem;
       left: 0; }
 
   .banner2-container img {
     padding: .5rem;
-    margin-top: 4rem;
+    margin-top: -1rem;
     margin-bottom: .5rem; }
 
   #banner3 div h1 {
@@ -442,49 +523,31 @@ div.footer {
       height: 60%; }
 
   #banner4 {
-    height: auto; }
-    #banner4 div{
-      margin: 0 auto;
-      width: 80%;
-    }
+    height: 70vh; }
     #banner4 h2 {
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
-    #modelo{
-      position: absolute;
-      margin-top: 1rem;
-      width: 175px;
-      top: 30%;
-      left: 24%;
-    }
-    #dabba{
-      margin-top: -1.5rem;
-    }
-    #tesca{
-      margin-top: -2.3rem;
-    }
-    #keff{
-      margin-top: 2rem;
-      width: 140px;
-    }
-    #si{
-      margin-top: 1rem;
-      width: 140px;
-    }
-  }
+      padding-top: 4rem;
+      padding-bottom: 2rem; }
+    #banner4 .clientes {
+      width: 150px;
+      margin-top: -1em; }
 
+  #banner5 .pakage {
+    margin-top: 4em; }
+  #banner5 #title-modules {
+    margin-top: 1.35em;
+    color: #7dc0c8; } }
 /*ipad*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .dropbtn {
-    display: none; }
-
+    display: none;
+  }
   .nav-content {
     display: block; }
 
   #mainbanner, #banner1, #banner2 {
     height: auto; } }
 /*alta resolución*/
-@media screen and (min-width: 1367px) and (max-width: 3900px) {
+@media screen and (min-width: 2000px) {
   .nav-content {
     display: block; } }
 

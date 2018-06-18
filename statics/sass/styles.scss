@@ -7,10 +7,11 @@ html{
 	box-sizing: inherit;
 }
 body{
-  margin: 0 auto;
+  margin: 0;
 	height: auto;
   font-size: 16px;
   position: relative;
+	color: $text-light;
 }
 
 h1{
@@ -111,7 +112,7 @@ opacity: 0;
     }
 img{
         margin-bottom: 2.5rem;
-    } 
+    }
 }
 .dropbtn{
   position: absolute;
@@ -156,13 +157,13 @@ div.nav-content a:hover{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	-webkit-transition: background-image 2s ease-out;
-  -moz-transition: background-image 2s ease-out;
-  -o-transition: background-image 2s ease-out;
-  transition: background-image 2s ease-out;
+	-webkit-transition: background-image 2s ease-in-out;
+  -moz-transition: background-image 2s ease-in-out;
+  -o-transition: background-image 2s ease-in-out;
+  transition: background-image 2s ease-in-out;
 }
 #banner1{
-  background: #FFF; 
+  background: #FFF;
   p{
     padding: 1rem;
     padding-left: 2rem;
@@ -187,7 +188,7 @@ div.nav-content a:hover{
   h2{
       color: $text-light;
   }
-} 
+}
 .banner2-container,.name, #banner3 div{
   position: relative;
   z-index: 1;
@@ -196,8 +197,8 @@ div.nav-content a:hover{
   }
   img{
     padding: .5rem;
-    margin-bottom: .5rem; 
-    
+    margin-bottom: .5rem;
+
   }
 }
 .name > .button{
@@ -245,24 +246,24 @@ h3.b-name{
       }
     }
   }
-} 
+}
 #i-cloud{
     color: $text-dark;
 }
-#i-interface{
-    color:#4e9b3b; 
+#i-check{
+    color:#4e9b3b;
 }
 #i-join{
     color: black
 }
 /*Nuestros SERVICIOS*/
 #banner2{
-  background-image: url('../images/banner2.jpeg');
+  background-image: url('../images/chef.jpg');
   .banner2-container{
    padding: 1rem;
   a.button{
     padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important; 
+    padding-right: 2.5rem !important;
   }
   a.button:hover{
     transform: scale(.95) !important;
@@ -273,7 +274,7 @@ h3.b-name{
   h1{
     padding-top: 3rem;
   }
-  
+
 }
 
 #banner2 h1, .our-services{
@@ -331,14 +332,16 @@ h3.b-name{
       color: $text-light;
       z-index: 10;
     }
+		div, h2 {
+			z-index: 20;
+		}
+		.clientes {
+			width: 150px;
+			margin-top: -1em;
+		}
 }
 
 /*compra*/
-#nav-dark{
-  #navbar-main{
-    background-color: rgba(0,0,0,0.50);
-  }
-}
 div.main-buy{
   .title{
     h1{
@@ -354,7 +357,7 @@ div.main-buy{
         color:$text-sub-dark;
       }
       span{
-        
+
         #i-interface{
           display: flex;
           margin: 0 auto;
@@ -369,16 +372,16 @@ div.main-buy{
         margin-top: 0rem !important;
         margin-bottom: 1.3rem;
       }
-    } 
+    }
   }
-} 
+}
 .logo-buy{
   width: 50%;
 }
 .modules{
   div{
     position: relative;
-    
+
     h2{
       padding-bottom: 0rem;
     }
@@ -394,7 +397,16 @@ div.main-buy{
   margin-top: 6.8rem;
   margin-bottom: 1rem;
 }
-
+#banner5 {
+	color: $text-black;
+	ul.movil-pakage {
+		display: none;
+	}
+	#buy-title {
+		font-weight: 600;
+		color: $text-dark;
+	}
+}
 
 
 
@@ -404,8 +416,23 @@ div.footer{
   height: 200px;
   background-color:rgb(50, 62, 82);
 }
+
+@media screen and (max-width: 767px) {
+	#banner5 {
+		ul.movil-pakage {
+			display: block;
+		}
+		#modules, #title-modules {
+			display: none;
+		}
+	}
+
+}
+div.main-buy div div span #i-interface {
+	display: none;
+}
 /*laptops*/
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .nav-content{
     display: block;
   }
@@ -416,11 +443,15 @@ div.footer{
       height: 100vh;
   }
   .our-services{
-    margin-top: 5rem;
+    margin-top: 1.5rem;
       > span{
-        width: 60%;  
-        position: absolute;
-        margin: 0;
+        width: 100%;
+        position: relative;
+				display: block;
+        margin: 0 auto;
+				a {
+					cursor: pointer;
+				}
       }
       :first-child{
         right: -25%;
@@ -428,28 +459,28 @@ div.footer{
       }
       >span#serv2, #serv5{
         right: -5%;
-        top: 3.5rem !important;
+        top: 0rem !important;
       }
       :last-child{
-        top: 10rem;
-        padding-top: 2rem;
+        top: 6rem;
+
         right: -25%;
       }
       #serv4, #serv6{
-        left: -25%;
+        left: -17.5%;
       }
       #serv5{
-        top: 4rem;
+        top: 2rem;
         left: 0;
       }
     }
     .banner2-container{
       img{
         padding: .5rem;
-        margin-top: 4rem;
-        margin-bottom: .5rem;        
+        margin-top: -1rem;
+        margin-bottom: .5rem;
       }
-    } 
+    }
     #banner3{
       div{
         h1{
@@ -472,14 +503,29 @@ div.footer{
           height: 60%;
         }
       }
-    } 
+    }
     #banner4{
       height: 70vh;
+
       h2{
         padding-top: 4rem;
         padding-bottom: 2rem;
       }
+			.clientes {
+				width: 150px;
+				margin-top: -1em;
+			}
     }
+		#banner5 {
+
+			.pakage {
+				margin-top: 4em;
+			}
+			#title-modules {
+				margin-top: 1.35em;
+				color: $text-dark;
+			}
+		}
 }
 /*ipad*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -495,7 +541,7 @@ div.footer{
 
 }
 /*alta resolución*/
-@media screen and (min-width: 1367px) and (max-width: 3900px){
+@media screen and (min-width: 2000px){
 	.nav-content{
 		display: block;
 	}
