@@ -31,7 +31,7 @@ h2 {
   width: 100%; }
 #slogan {
   color: #7dc0c8 !important;
-  font-weight: 700; 
+  font-weight: 700;
 }
 .modal {
   width: 100%;
@@ -283,7 +283,7 @@ h3.b-name {
       display: flex;
       margin: 0 auto;
       width: 80%;
-      height: auto; }
+      height: 250px; }
 
 #banner4 {
   background-image: url("../images/banner6.jpeg");
@@ -466,13 +466,17 @@ div.main-buy div {
 div.main-buy div div span #i-interface {
   display: none; }
 
-/*laptops*/
-@media screen and (min-width: 1366px) {
+@media screen and (min-width:768px) {
   .nav-content {
     display: block; }
-
-  .dropbtn {
-    display: none; }
+    .dropbtn {
+      display: none; }
+      #banner3 {
+        height: auto !important;
+      }
+}
+/*laptops*/
+@media screen and (min-width: 1366px) {
 
   #mainbanner, #banner1, #banner2, #banner3, #banner4 {
     height: 100vh; }
@@ -520,7 +524,8 @@ div.main-buy div div span #i-interface {
       display: flex;
       margin: 0 auto;
       width: 80%;
-      height: 60%; }
+
+       }
 
   #banner4 {
     height: 70vh; }
