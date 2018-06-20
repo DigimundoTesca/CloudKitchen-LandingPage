@@ -55,9 +55,9 @@ $("#begin-slide").cycle({
 /*change background color nav*/
   $(document).scroll(function(){
     if($(this).scrollTop() > 25) {
-      $('#navbar-main').css({"background-color":"rgba(50, 62, 82,1)"});
+      $('#navbar-main').css({"background-color":"rgba(50, 62, 82,1)", "box-shadow": "0px 4px 15px 0px rgba(0,0,0,0.45)"});
     } else {
-      $('#navbar-main').css({"background-color":"rgba(0,0,0,0.01)"});
+      $('#navbar-main').css({"background-color":"rgba(0,0,0,0.01)", "box-shadow": "0px 0px 0px 0px rgba(255,255,255,0.45)"});
     }
 	});
 

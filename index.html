@@ -70,7 +70,7 @@
                   ya sean comedores industriales, coffee breaks, servicios de catering, entre otros. Cuenta con un sistema integral POS (point of sale) que se puede
                   personalizar de acuerdo a las necesidades de nuestros clientes con datos en tiempo real.</p>
               <div class="beneficios mt-3">
-                <h2>¡Asombrosos Beneficios!</h2>
+                <h2 class="">¡Asombrosos Beneficios!</h2>
                 <div class="row text-center">
                   <div class="col-md-4">
                     <i id="i-cloud" class="icon-b fas fa-cloud" style="font-size:120px"></i>
@@ -184,77 +184,93 @@
       </div>
       <div id="product">
         <div id="banner5" class="container-fluid main-buy justify-content-center">
-
-          <div class="row modules">
-            <div class="col-md-6 justify-content-right" >
-              <div class="mt-5 title">
-                <h2 id="buy-title">Escoge el paquete que se adapte mejor a las necesidades de tu negocio</h2>
+          <h1 id="buy-title" class="text-center mt-5">Escoge el paquete que se adapte mejor a las necesidades de tu negocio</h1>
+          <div class="row" id="gridBuy">
+            <div class="col-md-4 justify-content-center">
+              <div class="paquete mb-4 mt-3" id="basic">
+                <div class="headPakage">
+                  <div class="star text-center">
+                    <i class=" h1 fas fa-star"></i>
+                  </div>
+                  <p class="h3 text-center">Básico</p>
+                </div>
+                <div class="bodyPakage">
+                  <div class="contentPakage text-center justify-content-center">
+                    <div class="pakegeContentPrice">
+                      <span class="h4"> $ 20,000<br>Anual </span>
+                    </div>
+                    <div class="descriptionPakage">
+                      <ul class="list">
+                          <li href="#" class="module"><i class="text-success fas fa-check"></i> Contador de accesos </li>
+                          <label>Contabiliza los accesos del personal y de los clientes</label>
+                          <li href="#" class="module"><i class="text-success fas fa-check"></i> Punto de venta</li>
+                          <label>Análisis gráfico de tus ventas configurado a tus necesidades</label>
+                          <li href="#" class="module"><i class="text-success fas fa-check"></i> Encuestas satisfacción del cliente</li>
+                          <label>Te permiten identificar áreas de oportunidad</label>
+                          <li href="#" class="module"><i class="text-success fas fa-check"></i> Control de almacen</li>
+                          <label>Lleva un control actualizado día a día de tus insumos.</label>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footerPakage text-center">
+                  <button type="button" class="btn btn-success btn-lg mb-3" name="button">Comprar</button>
+                </div>
               </div>
-                <h2 id="title-modules">Módulos</h2>
-                <ul id="modules">
-                    <li href="#" class="module">Contador de accesos </li>
-                    <label>Contabiliza los accesos del personal y de los clientes</label>
-                    <li href="#" class="module">Punto de venta</li>
-                    <label>Análisis gráfico de tus ventas configurado a tus necesidades</label>
-                    <li href="#" class="module">Encuestas satisfacción del cliente</li>
-                    <label>Te permiten identificar áreas de oportunidad</label>
-                    <li href="#" class="module">Control de almacen</li>
-                    <label>Lleva un control actualizado día a día de tus insumos.</label>
-                    <li href="#" class="module">Administración de cocinas y ensamble</li>
-                    <label>Maneja más de una cocina a la vez</label>
-                    <li href="#" class="module">Reportes de análisis de datos</li>
-                    <label>Reportes en tiempo real sobre el desempeño de tu restaurante</label>
-                  </ul>
             </div>
-            <div class="col-md-2 pakage justify-content-center">
-              <img src="statics/images/CloudKitchen.png" class="logo-buy rounded mx-auto d-block" alt="">
-              <h2>Básico</h2>
-              <a href="" class="btn btn-success button">Comprar</a>
-              <ul class="movil-pakage">
-                  <li href="#" class="module">Contador de accesos </li>
-                  <label>Contabiliza los accesos del personal y de los clientes</label>
-                  <li href="#" class="module">Punto de venta</li>
-                  <label>Análisis gráfico de tus ventas configurado a tus necesidades</label>
-                  <li href="#" class="module">Encuestas satisfacción del cliente</li>
-                  <label>Te permiten identificar áreas de oportunidad</label>
-                  <li href="#" class="module">Control de almacen</li>
-                  <label>Lleva un control actualizado día a día de tus insumos.</label>
-              </ul>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span>
-
+            <div class="col-md-4 justify-content-center">
+              <div class="paquete mb-4 mt-3" id="premium">
+                <div class="headPakage">
+                  <div class="star text-center">
+                    <i class=" h1 fas fa-star"></i>
+                  </div>
+                  <p class="h3 text-center">Plus</p>
+                </div>
+                <div class="bodyPakage">
+                  <div class="contentPakage text-center justify-content-center">
+                    <div class="pakegeContentPrice text-center">
+                      <span class="h4"> $ 30,000 <br>Anual</span>
+                    </div>
+                    <div class="descriptionPakage">
+                      <ul class="list">
+                        <p class="h2 mb-3 text-center">Basico <i class="text-success fas fa-plus"></i></p>
+                        <li href="#" class="module"><i class="text-success fas fa-check"></i> Administración de cocinas y ensamble</li>
+                        <label>Maneja más de una cocina a la vez</label>
+                        <li href="#" class="module"><i class="text-success fas fa-check"></i> Reportes de análisis de datos</li>
+                        <label>Reportes en tiempo real sobre el desempeño de tu restaurante</label>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footerPakage text-center">
+                  <button type="button" class="btn btn-success btn-lg mb-3" name="button">Comprar</button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-2 pakage">
-              <img src="statics/images/CloudKitchen.png" class="logo-buy rounded mx-auto d-block" alt="">
-              <h2>Premium</h2>
-              <a href="" class="btn btn-success button">Comprar</a>
-              <ul class="movil-pakage">
-                  <li href="#" class="module">Contador de accesos </li>
-                  <label>Contabiliza los accesos del personal y de los clientes</label>
-                  <li href="#" class="module">Punto de venta</li>
-                  <label>Análisis gráfico de tus ventas configurado a tus necesidades</label>
-                  <li href="#" class="module">Encuestas satisfacción del cliente</li>
-                  <label>Te permiten identificar áreas de oportunidad</label>
-                  <li href="#" class="module">Control de almacen</li>
-                  <label>Lleva un control actualizado día a día de tus insumos.</label>
-                  <li href="#" class="module">Administración de cocinas y ensamble</li>
-                  <label>Maneja más de una cocina a la vez</label>
-                  <li href="#" class="module">Reportes de análisis de datos</li>
-                  <label>Reportes en tiempo real sobre el desempeño de tu restaurante</label>
-                </ul>
-              <span class=""><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span><br>
-              <span><i id="i-interface" class="icon-b fas fa-check-circle " style="font-size:25px"></i></span>
-            </div>
-            <div class="col-md-2 pakage">
-              <img src="statics/images/CloudKitchen.png" class="logo-buy rounded mx-auto d-block" alt="">
-              <h2>Personalizado</h2>
-              <a href="" class="btn btn-success button">Agenda cita</a>
+            <div class="col-md-4 justify-content-center">
+              <div class="paquete mb-4 mt-3" id="gold">
+                <div class="headPakage">
+                  <div class="star text-center">
+                    <i class=" h1 fas fa-star"></i>
+                  </div>
+                  <p class="h3 text-center">Pro</p>
+                </div>
+                <div class="bodyPakage">
+                  <div class="contentPakage text-center justify-content-center">
+                    <div class="pakegeContentPrice">
+                      <span class="h4"> $ 40,000<br>Anual </span>
+                    </div>
+                    <div class="descriptionPakage">
+                      <ul class="list">
+                        <p class="h1 mb-5 text-center">¡Hecho a la medida! </p>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footerPakage text-center">
+                  <button type="button" class="btn btn-danger btn-lg mb-3" name="button">Contáctanos</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -266,27 +282,26 @@
                   <img id="logoFooter" src="statics/images/Cloud_kitchenLogo_white.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-sm-2">
-                    <h5>Get started</h5>
+                    <h5>Principal</h5>
                     <ul>
                       <li><a href="#">Home</a></li>
-                      <li><a href="#">Sign up</a></li>
-                      <li><a href="#">Downloads</a></li>
+                      <li><a href="#">Servicios</a></li>
+                      <li><a href="#">Conoce Más</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h5>About us</h5>
+                    <h5>Paquetes</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Basico</a></li>
+                        <li><a href="#">Plus</a></li>
+                        <li><a href="#">Premium</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h5>Support</h5>
+                    <h5>Nosotros</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Digimundo Technologies</a></li>
+                        <li><a href="#">Contáctanos</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
